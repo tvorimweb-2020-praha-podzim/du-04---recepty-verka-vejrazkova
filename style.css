@@ -1,28 +1,33 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
-
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
 
 /* -------------------------------------------------- */
 
 body {
-    margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 h2 {
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 .paticka {
-    text-align: center;
-    font-size: 14px;
-    color: silver;
+  text-align: center;
+  font-size: 14px;
+  color: silver;
 }
 
 .paticka a {
-    color: silver;
+  color: silver;
 }
 
 /* -------------------------------------------------- */
@@ -40,3 +45,90 @@ notebook/pc:
 */
 
 /* tvoje styly sem */
+
+
+.doporucujeme {
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  width: 380px;
+}
+
+.hlavni-recept {
+  background-image: url(../images/burger.jpg), linear-gradient(#000000, #ffffff);
+  background-image: linear-gradient(to left top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), url(../images/burger.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  flex-basis: 200px;
+  position: relative;
+  box-shadow: 0.1rem 0.1rem 0.1rem #ffffff;
+  border-bottom: 0.1rem solid #ffffff;
+}
+
+.sloupec {
+
+}
+
+.recept-meta {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  
+}
+
+.recept2 {
+  background-image: url(../images/sushi.jpg);
+  background-image: linear-gradient(to left, rgba(0,0,0,0.7) 100%,rgba(0,0,0,0.7) 100%), url(../images/sushi.jpg);
+  background-image: border;
+  flex-basis: 90px;
+  background-repeat: no-repeat;
+  background-position: left;
+  position: relative;
+  border-bottom: 0.1rem solid #ffffff;
+}
+
+.recept-nazev {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  font-size: 1.75rem;
+  color: white;
+  padding: 0.5rem;
+}
+
+.recept3 {
+  background-image: url(../images/rajcata.jpg);
+  background-image: linear-gradient(to left, rgba(0,0,0,0.7) 100%,rgba(0,0,0,0.7) 100%), url(../images/rajcata.jpg);
+  flex-basis: 90px;
+  background-repeat: no-repeat;
+  background-position: left;
+  position: relative;
+  border-bottom: 0.1rem solid #ffffff;
+}
+
+.recept4 {
+  background-image: url(../images/kure.jpg);
+  background-image: linear-gradient(to left, rgba(0,0,0,0.7) 100%,rgba(0,0,0,0.7) 100%), url(../images/kure.jpg);
+  flex-basis: 90px;
+  background-repeat: no-repeat;
+  background-position: left;
+  border-bottom: 0.1rem solid #ffffff;
+}
+
+.recept5 {
+  background-image: url(../images/grilovani.jpg);
+  background-image: linear-gradient(to left top, rgba(0,0,0,0.7) 100%,rgba(0,0,0,0.7) 100%), url(../images/grilovani.jpg);
+  flex-basis: 90px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 500px;
+  border-bottom: 0.1rem solid #ffffff;
+}
+
+.paticka {
+  display: flex;
+  justify-content: space-between;
+}
