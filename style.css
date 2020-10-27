@@ -46,7 +46,6 @@ notebook/pc:
 
 /* tvoje styly sem */
 
-
 .doporucujeme {
   display: flex;
   flex-direction: column;
@@ -56,7 +55,12 @@ notebook/pc:
 
 .hlavni-recept {
   background-image: url(../images/burger.jpg), linear-gradient(#000000, #ffffff);
-  background-image: linear-gradient(to left top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), url(../images/burger.jpg);
+  background-image: linear-gradient(      to left top,
+      transparent,
+      rgba(0, 0, 0, 0.7) 25%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url(../images/burger.jpg);
   background-repeat: no-repeat;
   background-position: left;
   flex-basis: 200px;
@@ -66,7 +70,6 @@ notebook/pc:
 }
 
 .sloupec {
-
 }
 
 .recept-meta {
@@ -76,12 +79,16 @@ notebook/pc:
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
-  
 }
 
 .recept2 {
   background-image: url(../images/sushi.jpg);
-  background-image: linear-gradient(to left, rgba(0,0,0,0.7) 100%,rgba(0,0,0,0.7) 100%), url(../images/sushi.jpg);
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.7) 100%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url(../images/sushi.jpg);
   background-image: border;
   flex-basis: 90px;
   background-repeat: no-repeat;
@@ -101,7 +108,12 @@ notebook/pc:
 
 .recept3 {
   background-image: url(../images/rajcata.jpg);
-  background-image: linear-gradient(to left, rgba(0,0,0,0.7) 100%,rgba(0,0,0,0.7) 100%), url(../images/rajcata.jpg);
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.7) 100%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url(../images/rajcata.jpg);
   flex-basis: 90px;
   background-repeat: no-repeat;
   background-position: left;
@@ -111,7 +123,12 @@ notebook/pc:
 
 .recept4 {
   background-image: url(../images/kure.jpg);
-  background-image: linear-gradient(to left, rgba(0,0,0,0.7) 100%,rgba(0,0,0,0.7) 100%), url(../images/kure.jpg);
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.7) 100%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url(../images/kure.jpg);
   flex-basis: 90px;
   background-repeat: no-repeat;
   background-position: left;
@@ -120,7 +137,12 @@ notebook/pc:
 
 .recept5 {
   background-image: url(../images/grilovani.jpg);
-  background-image: linear-gradient(to left top, rgba(0,0,0,0.7) 100%,rgba(0,0,0,0.7) 100%), url(../images/grilovani.jpg);
+  background-image: linear-gradient(
+      to left top,
+      rgba(0, 0, 0, 0.7) 100%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url(../images/grilovani.jpg);
   flex-basis: 90px;
   background-repeat: no-repeat;
   background-position: left;
