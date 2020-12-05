@@ -46,185 +46,186 @@ notebook/pc:
 
 /* tvoje styly sem */
 
-.doporucujeme {
+.body {
+  color: white;
+  background-repeat:no-repeat;
+}
+
+
+.recept {
   display: flex;
   flex-direction: column;
-  background-repeat: no-repeat;
-  width: 380px;
+  justify-content: space-between;
+  min-height: 90px;
+  padding: 0.5rem;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 0.1rem solid #ffffff;
 }
 
 .hlavni-recept {
-  background-image: url(../images/burger.jpg), linear-gradient(#000000, #ffffff);
   background-image: linear-gradient(
       to left top,
-      transparent,
-      rgba(0, 0, 0, 0.7) 25%,
-      rgba(0, 0, 0, 0.7) 100%
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 0%
     ),
-    url(../images/burger.jpg);
-  background-repeat: no-repeat;
-  background-position: left;
-  flex-basis: 200px;
-  position: relative;
-  box-shadow: 0.1rem 0.1rem 0.1rem #ffffff;
+    url("images/burger.jpg");
+  background-size: 100%;
+  background-position: center;
+  color: white;
+  min-height: 200px;
+  padding: 0.5rem;
   border-bottom: 0.1rem solid #ffffff;
+  background-repeat: no-repeat;
+
 }
 
-.sloupec {
+.recept-nazev-hlavni{
+  margin-top: 6rem;
 }
 
 .recept-meta {
-  font-size: 0.8rem;
-  font-weight: 400;
-  color: white;
   display: flex;
-  justify-content: space-between;
-  padding: 0.5rem;
+  font-size: 1.2rem;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+
+.recept-komentare {
+  display: flex;
+  margin-left: auto;
 }
 
 .recept2 {
-  background-image: url(../images/sushi.jpg);
   background-image: linear-gradient(
-      to left,
-      rgba(0, 0, 0, 0.7) 100%,
-      rgba(0, 0, 0, 0.7) 100%
+      to left top,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 0%
     ),
-    url(../images/sushi.jpg);
-  background-image: border;
-  flex-basis: 90px;
-  background-repeat: no-repeat;
-  background-position: left;
-  position: relative;
-  border-bottom: 0.1rem solid #ffffff;
+    url("images/sushi.jpg");
+    border-bottom: 0.1rem solid #ffffff;
+    background-repeat: no-repeat;
 }
 
 .recept-nazev {
   display: flex;
-  align-items: flex-end;
-  justify-content: end;
+  align-items: stretch;
+  margin: 0;
   font-size: 1.75rem;
-  color: white;
-  padding: 0.5rem;
+}
+
+.hlavni-recept {
+  min-height: 200px;
 }
 
 .recept3 {
-  background-image: url(../images/rajcata.jpg);
   background-image: linear-gradient(
-      to left,
-      rgba(0, 0, 0, 0.7) 100%,
-      rgba(0, 0, 0, 0.7) 100%
+      to left top,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 0%
     ),
-    url(../images/rajcata.jpg);
-  flex-basis: 90px;
-  background-repeat: no-repeat;
-  background-position: left;
-  position: relative;
-  border-bottom: 0.1rem solid #ffffff;
+    url("images/rajcata.jpg");
+    border-bottom: 0.1rem solid #ffffff;
+    background-repeat: no-repeat;
 }
 
 .recept4 {
-  background-image: url(../images/kure.jpg);
   background-image: linear-gradient(
-      to left,
-      rgba(0, 0, 0, 0.7) 100%,
-      rgba(0, 0, 0, 0.7) 100%
+      to left top,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 0%
     ),
-    url(../images/kure.jpg);
-  flex-basis: 90px;
-  background-repeat: no-repeat;
-  background-position: left;
-  border-bottom: 0.1rem solid #ffffff;
+    url("images/kure.jpg");
+    border-bottom: 0.1rem solid #ffffff;
+    background-repeat: no-repeat;
 }
 
 .recept5 {
-  background-image: url(../images/grilovani.jpg);
   background-image: linear-gradient(
       to left top,
-      rgba(0, 0, 0, 0.7) 100%,
-      rgba(0, 0, 0, 0.7) 100%
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 0%
     ),
-    url(../images/grilovani.jpg);
-  flex-basis: 90px;
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: 500px;
-  border-bottom: 0.1rem solid #ffffff;
+    url("images/grilovani.jpg");
+    border-bottom: 0.1rem solid #ffffff;
+    background-repeat: no-repeat;
 }
 
-.paticka {
-  display: flex;
-  justify-content: space-between;
-}
 
 @media (min-width: 480px) {
-  .doporucujeme {
-    display: flex;
-    min-width: 480px;
-    font-size: 2rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 
-  .recept-meta {
-    padding: 1.25rem;
-    width: 50vw;
-  }
-
-  .hlavni-recept {
-    min-height: 40vw;
-    flex-basis: 400px;
-    background-size: auto;
-  }
-
-  .hlavni-recept .recept-nazev {
-    margin-top: 18rem;
-  }
-
-  .sloupec {
-    position: relative;
-    align-content: flex-end;
-    flex-direction: row;
-  }
-
-  .recept .recept-kategorie {
-    margin-top: 8rem;
-  }
-
-  .recept {
-  }
-
-  .recept2,
-  .recept3,
-  .recept4,
-  .recept5 {
-    min-height: 10vh;
-    min-width: 10vw;
-    background-size: 400px;
-  }
+.recepty {
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.sloupec {
+  flex-direction: column;
+  width: 100%;
+  ;
+}
+
+.recept2,
+.recept3,
+.recept4,
+.recept5 .sloupec {
+  display: flex;
+  flex-direction: column;
+  border-right: 0.1rem solid #ffffff;
+}
+
+.sloupec {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.sloupec .recept {
+  width: 50%;
+}
+
+.hlavni-recept {
+  width: 100%;
+
+}
+
+.recept-nazev-hlavni{
+  margin-top: 10rem;
+}
+
+ 
 @media (min-width: 860px) {
-  .doporucujeme {
+   .doporucujeme { 
     display: flex;
     flex-direction: row;
     min-width: 860px;
     font-size: 3rem;
   }
 
+  .sloupec {
+    flex-direction: column;
+    min-width: 100vw;
+    width: auto;
+    margin-right: -50vw;
+  }
+
   .hlavni-recept {
     min-height: 40vw;
     min-width: 100vh;
     flex-basis: 400px;
+    background-position: center;
     background-size: auto;
+    border-right: 0.1rem solid #ffffff;
   }
 
-  .hlavni-recept .recept-nazev {
-    margin-top: 18rem;
+  .recept-nazev-hlavni{
+    margin-top: 26rem;
   }
 
-  .recept .recept-kategorie {
-    margin-top: 8rem;
-  }
+
 
   .recept2,
   .recept3,
