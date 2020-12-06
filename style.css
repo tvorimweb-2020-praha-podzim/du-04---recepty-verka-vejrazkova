@@ -198,39 +198,32 @@ notebook/pc:
 
  
 @media (min-width: 860px) {
-   .doporucujeme { 
-    display: flex;
-    flex-direction: row;
-    min-width: 860px;
-    font-size: 3rem;
-  }
+  .doporucujeme { 
+   display: flex;
+   flex-direction: row;
+   font-size: 3rem;
+ }
 
-  .sloupec {
-    flex-direction: column;
-    min-width: 100vw;
-    width: auto;
-    margin-right: -50vw;
-  }
+ .sloupec {
+   flex-direction: column;
+   width: calc(100%/3);
+ }
 
-  .hlavni-recept {
-    min-height: 40vw;
-    min-width: 100vh;
-    flex-basis: 400px;
-    background-position: center;
-    background-size: auto;
-    border-right: 0.1rem solid #ffffff;
-  }
+ .hlavni-recept {
+   border-right: 0.1rem solid #ffffff;
+   max-height: 70vh;
+   background-size: auto;
+ }
 
-  .recept-nazev-hlavni{
-    margin-top: 26rem;
-  }
+ .recept-nazev-hlavni{
+  margin-top: 26rem;
+ }
 
-
-
-  .recept2,
-  .recept3,
-  .recept4,
-  .recept5 {
-    min-height: 50vh;
-  }
+ .recept2,
+ .recept3,
+ .recept4,
+ .recept5 {
+   min-height: 35vh;
+   min-width: 30vw;
+ }
 }
